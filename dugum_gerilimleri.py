@@ -23,7 +23,7 @@ if __name__ == "__main__":
     print(f"Hesaplanan V1: {v1:.4f} Volt")
     print(f"Hesaplanan V2: {v2:.4f} Volt")
 
-    v1_yeni, v2_yeni = devreyi_coz(R1 * 1.1, R2, R3, R4, Ig1, Ig2)
+    v1_yeni, v2_yeni = devre_cozumu(R1 * 1.1, R2, R3, R4, Ig1, Ig2)
     print(f"\nR1 %10 artinca yeni V1: {v1_yeni:.4f} V")
     print(f"V1'deki degisim: {v1_yeni - v1:.4f} V")
     print(f"\nR1 %10 artinca yeni V2: {v2_yeni:.4f} V")
