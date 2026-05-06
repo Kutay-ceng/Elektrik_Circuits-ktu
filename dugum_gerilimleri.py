@@ -1,11 +1,10 @@
 import numpy as np
 
-def devreyi_coz(r1, r2, r3, r4, ig1, ig2):
+def devre_cozumu(r1, r2, r3, r4, ig1, ig2):
     a = (1/r1) + (1/r2)
     b = -(1/r2)
     c = (1/r2) + (1/r3) + (1/r4)
 
-    # A * x = B formatında matris kurulumu
     katsayi_matrisi = np.array([[a, b], 
                                 [b, c]])
     
@@ -20,7 +19,7 @@ if __name__ == "__main__":
     Ig1, Ig2 = 12.0, 16.0
 
     print("--- Gerilimler ---")
-    v1, v2 = devreyi_coz(R1, R2, R3, R4, Ig1, Ig2)
+    v1, v2 = devre_cozumu(R1, R2, R3, R4, Ig1, Ig2)
     print(f"Hesaplanan V1: {v1:.4f} Volt")
     print(f"Hesaplanan V2: {v2:.4f} Volt")
 
