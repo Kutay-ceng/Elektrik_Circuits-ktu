@@ -24,10 +24,8 @@ if __name__ == "__main__":
     print(f"Hesaplanan V2: {v2:.4f} Volt")
 
     v1_yeni, v2_yeni = devre_cozumu(R1 * 1.1, R2, R3, R4, Ig1, Ig2)
-    print(f"\nR1 %10 artinca yeni V1: {v1_yeni:.4f} V")
-    print(f"V1'deki degisim: {v1_yeni - v1:.4f} V")
-    print(f"\nR1 %10 artinca yeni V2: {v2_yeni:.4f} V")
-    print(f"V2'deki degisim: {v2_yeni - v2:.4f} V")
+    print(f"Yeni V1: {v1_yeni_R:.4f} V (Degisim: {v1_yeni_R - v1:.4f} V)")
+    print(f"Yeni V2: {v2_yeni_R:.4f} V (Degisim: {v2_yeni_R - v2:.4f} V)")
 
     v1_yeni_I, v2_yeni_I = devre_cozumu(R1, R2, R3, R4, 13.0, Ig2)
     print(f"Yeni V1: {v1_yeni_I:.4f} V (Degisim: {v1_yeni_I - v1:.4f} V)")
