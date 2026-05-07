@@ -19,7 +19,7 @@ if __name__ == "__main__":
     Ig1, Ig2 = 12.0, 16.0
 
     print("--- Gerilimler ---")
-    v1, v2 = devre_cozumu(R1, R2, R3, R4, Ig1, Ig2)
+    v1_yeni_R, v2_yeni_R = devre_cozumu(R1 * 1.1, R2, R3, R4, Ig1, Ig2)
     print(f"Hesaplanan V1: {v1:.4f} Volt")
     print(f"Hesaplanan V2: {v2:.4f} Volt")
 
